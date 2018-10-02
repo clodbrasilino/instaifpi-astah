@@ -1,0 +1,163 @@
+MacBook-Air-de-Claudia:~ clodbrasilino$ cd Desktop/instaifpi/
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ ls
+docs		instaifpi.asta
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ git log
+fatal: not a git repository (or any of the parent directories): .git
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ ls
+docs		instaifpi.asta
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ cd ..
+MacBook-Air-de-Claudia:Desktop clodbrasilino$ cd ..
+MacBook-Air-de-Claudia:~ clodbrasilino$ ls
+Applications		Movies			docker-files
+Desktop			Music			modelio
+Documents		Pictures		node_modules
+Downloads		Public			package-lock.json
+Library			Sites
+MacBook-Air-de-Claudia:~ clodbrasilino$ cd modelio/
+MacBook-Air-de-Claudia:modelio clodbrasilino$ ls
+workspace
+MacBook-Air-de-Claudia:modelio clodbrasilino$ cd workspace/
+MacBook-Air-de-Claudia:workspace clodbrasilino$ ls
+instaifpi
+MacBook-Air-de-Claudia:workspace clodbrasilino$ cd instaifpi/
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ ls
+LICENSE		README.md	data		project.conf
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ ls -a
+.		.git		LICENSE		data
+..		.runtime	README.md	project.conf
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .runtime/.save
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.runtime/projectInfo.html
+	data/fragments/instaifpi/model/Standard.Actor/e774857d-b7a3-4d9c-888f-28785324e91c.exml
+	data/fragments/instaifpi/model/Standard.UseCase/0e0fdc61-6982-4b2d-81ce-26c5837ec5ac.exml
+	data/fragments/instaifpi/model/Standard.UseCase/427d6952-f2e5-469b-a2c6-ae6a7e51b26f.exml
+	data/fragments/instaifpi/model/Standard.UseCase/685d2694-67d7-4e19-a1f6-db68ad08ab86.exml
+	data/fragments/instaifpi/model/Standard.UseCase/719aa07b-caa0-43ff-a826-b30e2a6fec68.exml
+	data/fragments/instaifpi/model/Standard.UseCase/7eb7b623-1642-40e3-8515-a2931c41b232.exml
+	data/fragments/instaifpi/model/Standard.UseCaseDiagram/74e3de7f-5a1a-4f8b-95e0-8fd479d66e01.exml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ git log
+commit 3572244c724484b03c052be86f2a8aacc6fbed61 (HEAD -> master, origin/master, origin/HEAD)
+Author: Clodoaldo Brasilino <clodbrasilino@MacBook-Air-de-Claudia.local>
+Date:   Thu Sep 20 19:54:54 2018 -0300
+
+    Atualizando modelo
+
+commit 61e5d894013023b75ddfeb1f0e01f1bd2cdb4ef9
+Merge: 2c11188 474b2d0
+Author: Clodoaldo Brasilino <clodbrasilino@MacBook-Air-de-Claudia.local>
+Date:   Thu Sep 20 17:33:21 2018 -0300
+
+    Merge branch 'master' of https://github.com/clodbrasilino/instaifpi
+
+commit 2c11188358284b2e2beb741704e495482f690535
+Author: Clodoaldo Brasilino <clodbrasilino@MacBook-Air-de-Claudia.local>
+Date:   Thu Sep 20 17:31:50 2018 -0300
+
+    Novos casos e trocando do Astah para o Modelio
+
+commit 474b2d0b97fe00d452365f56f344f08e2bffbbb6
+Author: Clodoaldo Brasilino <886522+clodbrasilino@users.noreply.github.com>
+Date:   Wed Sep 19 17:07:31 2018 -0300
+
+    Update README.md
+    
+    Atualizando readme
+commit 3572244c724484b03c052be86f2a8aacc6fbed61 (HEAD -> master, origin/master, 
+origin/HEAD)
+Author: Clodoaldo Brasilino <clodbrasilino@MacBook-Air-de-Claudia.local>
+Date:   Thu Sep 20 19:54:54 2018 -0300
+
+    Atualizando modelo
+
+commit 61e5d894013023b75ddfeb1f0e01f1bd2cdb4ef9
+Merge: 2c11188 474b2d0
+Author: Clodoaldo Brasilino <clodbrasilino@MacBook-Air-de-Claudia.local>
+Date:   Thu Sep 20 17:33:21 2018 -0300
+
+    Merge branch 'master' of https://github.com/clodbrasilino/instaifpi
+
+commit 2c11188358284b2e2beb741704e495482f690535
+Author: Clodoaldo Brasilino <clodbrasilino@MacBook-Air-de-Claudia.local>
+Date:   Thu Sep 20 17:31:50 2018 -0300
+
+    Novos casos e trocando do Astah para o Modelio
+
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ cd ..
+MacBook-Air-de-Claudia:workspace clodbrasilino$ git clone https://github.com/clodbrasilino/instaifpi-astah.git
+Cloning into 'instaifpi-astah'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+MacBook-Air-de-Claudia:workspace clodbrasilino$ cd instaifpi
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ cd 
+.git/         LICENSE       data/         
+.runtime/     README.md     project.conf  
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ cd ~/Desktop/instaifpi/
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ ls
+docs		instaifpi.asta
+MacBook-Air-de-Claudia:instaifpi clodbrasilino$ cd docs/
+MacBook-Air-de-Claudia:docs clodbrasilino$ mv ~/modelio/
+.DS_Store  workspace/ 
+MacBook-Air-de-Claudia:docs clodbrasilino$ mv ~/modelio/workspace/
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+MacBook-Air-de-Claudia:docs clodbrasilino$ mv ~/modelio/workspace/instaifpi-astah/ ~/Desktop/
+MacBook-Air-de-Claudia:docs clodbrasilino$ mv instaifpi2.asta ~/Desktop/instaifpi-astah/
+MacBook-Air-de-Claudia:docs clodbrasilino$ cd ~/Desktop/instaifpi-astah/
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ ls
+LICENSE		README.md	instaifpi2.asta
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ mv instaifpi2.asta instaifpi.asta 
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	instaifpi.asta
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ git add insa
+fatal: pathspec 'insa' did not match any files
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ git add instaifpi.asta 
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ git commit -m "Diagrama de casos de Uso completo, Diagrama de Atividades de Publicar Foto"
+[master b04b412] Diagrama de casos de Uso completo, Diagrama de Atividades de Publicar Foto
+ Committer: Clodoaldo Brasilino <clodbrasilino@MacBook-Air-de-Claudia.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 instaifpi.asta
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 28.98 KiB | 14.49 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/clodbrasilino/instaifpi-astah.git
+   03bc785..b04b412  master -> master
+MacBook-Air-de-Claudia:instaifpi-astah clodbrasilino$ 
+
